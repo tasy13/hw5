@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background: url(StockCake-Cosmic_Dust_Clouds-547083-standard.jpg) center/cover no-repeat;
+        }
+
+        #container {
+            width: 350px;
+            padding: 25px;
+            background: rgba(211, 190, 213, 0.45);
+            border-radius: 10px;
+            box-shadow: 4px 4px 25px rgba(0,0,0,0.2);
+            padding-bottom: 50px;
+        }
+
+        #container h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 40px;
+            font-weight: bolder;
+            color: aliceblue;
+                }
+
+        .input{
+            font-size:large;
+            margin-bottom: 15px;
+        }
+
+        .input label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: medium;
+            color: rgb(36, 24, 43);
+        }
+
+        .input input {
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.7);
+            outline: none;
+        }
+
+        button{
+            width: 95%;
+            padding: 12px;
+            border: none;
+            background: #5b3d68;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #443c44;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+
+        .options a{
+            color: #1f0223;
+            text-decoration:solid;
+        }
+
+        .options a:hover {
+            color: rgb(217, 206, 220);
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <h1>Account Login</h1>
+
+        <div class="input">
+            <label for="username"></label>
+            <input type="text" id="username" name="username" placeholder="@username">
+        </div>
+
+        <div class="input">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="options">
+            <label for="remember">
+                <input type="checkbox" id="remember" name="remember" value="remember"> Remember Me</label>
+
+            <a href="#">Forgot Password?</a>
+        </div>
+
+    </div>
+</body>
+</html>
